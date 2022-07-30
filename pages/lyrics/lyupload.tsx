@@ -18,7 +18,7 @@ const LyUploadPage: NextPage = () => {
     const file = e.target.files[0]
     console.log(file)
     setImages(file)
-   // alert(file.name) 해당 파일명
+   
   }
 
   const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -31,6 +31,10 @@ const LyUploadPage: NextPage = () => {
     const res = await axios.post(`${HOST_8000}/rc`, formData, {headers})
     
   }
+  
+  
+  
+  
   
   useEffect(()=> {
   } ,[])

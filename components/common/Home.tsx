@@ -1,4 +1,4 @@
-import Style from '@/styles/Video.module.css'
+
 import css from "styled-jsx/css"
 import {Button, Col, Form, Row} from "react-bootstrap";
 import { useEffect } from 'react';

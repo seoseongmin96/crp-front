@@ -14,9 +14,7 @@ const OurSite: React.FC = () => {
            <p>또한 인공지능 기술을 기반으로 만들어진 사이트이기 때문에 사용자가 원하는
             정보를 실시간으로 제공해주고 표절 및 악보 분석 프로그램에서는 보이스 봇 기술을 이용하여 봇에게 필요한 정보를 물어보게 되면 사용자의 요구를 인식하여 악보 분석 결과 및 표절률 등을
             다양한 정보를 제공합니다. </p><br/> <p>또한 찾고 싶은 음원을 들려주게 되면 해당 음원을 찾아주고 사용자가 찾은 음원과 유사한 음원을 추천해줍니다.</p>
-        <a href="#" className={style.float}>
-                <img src='https://ifh.cc/g/5y48Hl.png' className={style.my} style={{width:40+"px", height:40+"px"}} alt="icon"/>
-            </a>
+        
             </div>
         
             </div> )

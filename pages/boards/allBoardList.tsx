@@ -1,12 +1,8 @@
-import React, {useEffect, useRef, useState } from 'react'
+import React, {useEffect, useState } from 'react'
 import AllBoardList from '@/components/boards/AllBoardList'
-import { useAppDispatch } from '@/hooks'
-import {  GetStaticProps,  InferGetStaticPropsType, NextPage } from 'next'
-import { writeComment } from '@/modules/slices/boardSlce'
-import axios from 'axios'
+import { NextPage } from 'next'
 import { Article } from '@/modules/types'
 import { readList } from '@/modules/apis/article'
-
 
 const headers = {
   "Content-Type" : "application/json",
@@ -30,9 +26,5 @@ const AllBoardListPage: NextPage = () => {
     <AllBoardList data = {data} />
   )
 }
-
-
-
-
 
 export default AllBoardListPage

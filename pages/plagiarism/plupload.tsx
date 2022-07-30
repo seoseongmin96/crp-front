@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Plupload from '@/components/plagiarism/Plupload'
 import { NextPage } from 'next'
 import axios from 'axios'
+import {HOST_3000,HOST_8000} from "@/components/common/Path"
+
 const headers = {
   "Content-Type" : "multipart/form-data",
   //Authorization: "JWT fefege...",
@@ -16,7 +18,7 @@ const PlUploadPage: NextPage = () => {
     const file = e.target.files[0]
     console.log(file)
     setImages(file)
-   // alert(file.name) 해당 파일명
+   
   }
 
   const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -25,8 +27,8 @@ const PlUploadPage: NextPage = () => {
     formData.append('uploadImage', images[0])
     console.log('>>' + formData)
     console.log(`업로드 된 표절용 악보 : ${(formData)}`)
-    window.location.href = "http://localhost:3000/plagiarism/plagiarism"
-    const res = await axios.post(`http://127.0.0.1:8000/rc`, formData, {headers})
+    window.location.href = `${HOST_3000}/plagiarism/plagiarism`
+    const res = await axios.post(`${HOST_8000}/rc`, formData, {headers})
   }
   
   const fixonSubmitFile =  async (e: React.FormEvent<HTMLFormElement>) => {
@@ -35,7 +37,7 @@ const PlUploadPage: NextPage = () => {
     fixData.append('uploadImage', images[0])
     console.log('>>' + fixData)
     console.log(`업로드 된 원본 악보 : ${(fixData)}`)
-    const res = await axios.post(`http://127.0.0.1:8000/rc`, fixData, {headers})
+    const res = await axios.post(`${HOST_8000}/rc`, fixData, {headers})
   }
 
   useEffect(()=> {

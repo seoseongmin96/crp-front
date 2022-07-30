@@ -67,9 +67,7 @@ const AboutSite: React.FC = () => {
             </div>
           </div>
         </div>
-        <a href="#" className={style.float}>
-              <img src='https://ifh.cc/g/5y48Hl.png' className={style.my} style={{width:40+"px", height:40+"px"}} alt="icon"/>
-          </a>
+        
         </>)
 }
 

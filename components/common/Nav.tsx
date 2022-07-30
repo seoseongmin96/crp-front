@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import React, { useState } from "react";
 import Link from "next/link";
-import { HOST_3001 } from "@/components/common/Path";
+import { HOST_3001 ,MUSIC_PLAYER_PORT } from "@/components/common/Path";
 
 const Nav: React.FC = () => {
   return (
@@ -122,11 +122,13 @@ const Nav: React.FC = () => {
 
             <ul className="nav-item">
               <li>
-                <Link href={HOST_3001}>
-                  <a className="nav-link text-danger">Tone-Piano</a>
+                <Link href= "/music/piano">
+                  <a className="nav-link text-danger">Piano</a>
                 </Link>
               </li>
             </ul>
+
+            
           </ul>
         </div>
       </div>

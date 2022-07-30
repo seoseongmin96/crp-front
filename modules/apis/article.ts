@@ -1,6 +1,7 @@
 import { Article } from "@/modules/types";
 import axios, { AxiosResponse } from "axios";
-const SERVER = process.env.NEXT_PUBLIC_SERVER
+import {HOST_8000} from "@/components/common/Path"
+
 const headers = {
     "Content-Type" : "application/json",
     Authorization: "JWT fefege...",
@@ -9,7 +10,7 @@ const headers = {
 export const writeArticle = async (
     writeData: Article) => {
         try {
-            await axios.post(`${SERVER}/articles/write`, writeData, {headers})            
+            await axios.post(`${HOST_8000}/articles/write`, writeData, {headers})            
         } catch (err) {
             return err;
         }
@@ -20,7 +21,7 @@ export const removeBoard = async(
     removeForData : Article
 ) => {
     try{
-        await axios.delete(`${SERVER}/articles/delete`, {data : removeForData})
+        await axios.delete(`${HOST_8000}/articles/delete`, {data : removeForData})
     } catch (err) {
         return(err);
     }
@@ -31,7 +32,7 @@ export const writeComment = async(
 ) => {
     try{
         console.log('>>')
-        await axios.post(`${SERVER}/articles/write`, writeComment, {headers})
+        await axios.post(`${HOST_8000}/articles/write`, writeComment, {headers})
     } catch (err){
         return(err)
     }

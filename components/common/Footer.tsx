@@ -27,7 +27,7 @@ const QA: React.FC = () => {
     사이트 소개 
   </Link>
   &nbsp; &nbsp;
-  <Link color = "#009688"href = "/site/aboutSite">
+  <Link color = "#009688"href = "/company/aboutSite">
     관련사이트 
   </Link>
   &nbsp;&nbsp;

@@ -47,25 +47,5 @@ const AllBoardList: React.FC<Props> = ({data} : Props) => {
   )
 }
 
-  /** 임의로 데이터 직접 넣어 test
-  useEffect(() => {
-    let articles: Array<Article> = [
-      {"articleId":1001,"title":"234234","writtenDate":"2022","open":"2022","content":"423432423","picture":null,"height":"234234","weight":"23423","comment":"test"},
-  {"articleId":1002,"title":"테스트","writtenDate":"2022","open":"2022","content":"게시물","picture":null,"height":"170","weight":"60","comment":"test"}
-    ];
-    console.log('articles prototype 타입: ' + Object.prototype.toString.call(articles))
-    setArticleList(articles)
-  })
- */
-
-/** 
-export const getServerSideProps = async () => {
-  try {
-    const res: AxiosResponse = await axios.get(`${SERVER}/articles/findAll`, {headers})
-    if(res.status === 200){
-      
-    }
-  }
-}
-*/
+  
 export default AllBoardList
