@@ -136,6 +136,14 @@ const Nav: React.FC = () => {
               </li>
             </ul>
 
+            <ul className="nav-item">
+              <li>
+                <Link href= "/Player/musicplayer">
+                  <a className="nav-link text-danger">MusicPlayer</a>
+                </Link>
+              </li>
+            </ul>
+
             
           </ul>
         </div>
