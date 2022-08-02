@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import AddBoard from '@/components/boards/AddBoard'
 import { useAppDispatch } from '@/hooks'
 import { NextPage } from 'next'
-import { writeBoard } from '@/modules/slices/boardSlce'
+import { writeArticle } from '@/modules/slices/articleSlice'
 
 import { Article } from '@/modules/types'
 
@@ -24,7 +24,7 @@ const AddBoardPage: NextPage = () =>  {
 
   const onSubmit = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault() 
-    dispatch(writeBoard(write))
+    dispatch(writeArticle(write))
   }
 
   return (

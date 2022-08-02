@@ -128,6 +128,14 @@ const Nav: React.FC = () => {
               </li>
             </ul>
 
+            <ul className="nav-item">
+              <li>
+                <Link href= "/File/fileupload">
+                  <a className="nav-link text-danger">FileUpload</a>
+                </Link>
+              </li>
+            </ul>
+
             
           </ul>
         </div>

@@ -2,7 +2,8 @@ import { AnyAction, CombinedState, combineReducers,  configureStore } from '@red
 import { createWrapper } from 'next-redux-wrapper'
 import logger from 'redux-logger'
 import { HYDRATE } from 'next-redux-wrapper';
-import articleReducer from './slices/boardSlce';
+import articleReducer from './slices/articleSlice';
+import userReducer from './slices/userSlice';
 import rootSaga from '@/modules/sagas';
 import createSagaMiddleware from '@redux-saga/core'
 import { TypedUseSelectorHook, useSelector } from 'react-redux';
@@ -17,7 +18,8 @@ const sagaMiddleware = createSagaMiddleware()
 
 const combinedReducer = combineReducers({
        
-        article: articleReducer
+        article: articleReducer,
+        user: userReducer
         
 })
 const rootReducer = (

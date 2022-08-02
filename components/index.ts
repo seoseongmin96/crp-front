@@ -11,6 +11,7 @@ import Lyrics from "./lyrics/Lyrics"
 import Lyupload from "./lyrics/Lyupload"
 import Plagiarism from "./plagiarism/Plagiarism"
 import Plupload from "./plagiarism/Plupload"
+
 export { Analysis, Anupload, Footer, Home, Nav,
     Select, AboutSite, OurSite, Profile, Lyrics,
     Lyupload, Plagiarism, Plupload };  

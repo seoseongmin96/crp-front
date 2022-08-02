@@ -77,4 +77,16 @@ let allMusic = [
         img : "DanzaKuduro",
         audio : "DanzaKuduro"
     },
+    {
+        name : "Shallow",
+        artist : "Lady Gaga & Bradely",
+        img : "shallow",
+        audio : "Shallow"
+    },
+    {
+        name : "A whole new world",
+        artist : "ZAYN",
+        img : "aladdin",
+        audio : "Aladdin"
+    },
 ]

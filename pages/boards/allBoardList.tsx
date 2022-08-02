@@ -2,7 +2,7 @@ import React, {useEffect, useState } from 'react'
 import AllBoardList from '@/components/boards/AllBoardList'
 import { NextPage } from 'next'
 import { Article } from '@/modules/types'
-import { readList } from '@/modules/apis/article'
+import { ArticleController } from '@/modules/controllers/ArticleController'
 
 const headers = {
   "Content-Type" : "application/json",
@@ -16,7 +16,8 @@ const AllBoardListPage: NextPage = () => {
   const [ data, setData ] = useState<Array<Article>>([])
   
   useEffect (() => {
-    readList().then(resonse => {
+    const articleController = new ArticleController();
+    articleController.readList().then(resonse => {
       setData(resonse)
     })
 } ,[])
