@@ -76,7 +76,7 @@ const AnUpload: React.FC<Props> = ({ onSubmit }: Props) => {
               <h4 className={style.h4}>
                 {" "}
                 <br />
-                분석할 악보를 업로드하세요
+                분석하고 싶은 악보를 업로드하세요
               </h4>
             </div>
 

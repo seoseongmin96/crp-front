@@ -15,7 +15,7 @@ export class FileService {
 
   public getFormData(file: File): FormData {
     const formData = new FormData();
-    formData.append("file", file);
+    formData.append("file " , file);
     return formData;
   }
 }

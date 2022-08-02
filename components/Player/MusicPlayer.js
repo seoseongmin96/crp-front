@@ -2,7 +2,7 @@
 // import css from "styled-jsx/css"
 // import '@fortawesome/fontawesome-free/css/all.min.css'
 
-// // import '../musicPlayer'
+// import '../musicPlayer/api/music.js'
 
 
 // function MusicPlayer(){
@@ -36,11 +36,12 @@
 
 //     // 음악 재생
 //     function loadMusic(num) {
-//       musicImg.src = `images/${allMusic[num - 1].img}.jpg`;
-//       musicImg.alt = `${allMusic[num - 1].img}`;
-//       musicName.innerText = allMusic[num - 1].name;
-//       musicArtist.innerText = allMusic[num - 1].artist;
-//       musicAudio.src = `songs/${allMusic[num - 1].audio}.mp3`;
+//         const music = allMusic()
+//       musicImg.src = `images/${music[num - 1].img}.jpg`;
+//       musicImg.alt = `${music[num - 1].img}`;
+//       musicName.innerText = music[num - 1].name;
+//       musicArtist.innerText = music[num - 1].artist;
+//       musicAudio.src = `songs/${music[num - 1].audio}.mp3`;
 //     }
 
 //     // 플레이 버튼

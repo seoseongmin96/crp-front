@@ -32,7 +32,7 @@ const Nav: React.FC = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 m-auto">
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle  "
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -59,7 +59,7 @@ const Nav: React.FC = () => {
 
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link dropdown-toggle "
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -82,64 +82,38 @@ const Nav: React.FC = () => {
               </ul>
             </li>
 
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                프로그램
-              </a>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <Link href="/common/select">
-                    <a className="dropdown-item">표절 프로그램</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/common/select">
-                    <a className="dropdown-item">분석 프로그램</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/common/select">
-                    <a className="dropdown-item">작사 프로그램</a>
-                  </Link>
-                </li>
-              </ul>
-            </li>
+            <ul className="nav-item">
+              <li>
+                <Link href= "/common/select">
+                  <a className="nav-link">표절/분석/작사 프로그램</a>
+                </Link>
+              </li>
+            </ul>
 
             <ul className="nav-item">
               <li>
                 <Link href="/company/aboutSite">
-                  <a className="nav-link">관련 사이트</a>
+                  <a className="nav-link ">관련 사이트</a>
                 </Link>
               </li>
             </ul>
+
+
 
             <ul className="nav-item">
               <li>
                 <Link href= "/music/piano">
-                  <a className="nav-link text-danger">Piano</a>
+                  <a className="nav-link">Piano</a>
                 </Link>
               </li>
             </ul>
 
-            <ul className="nav-item">
-              <li>
-                <Link href= "/File/fileupload">
-                  <a className="nav-link text-danger">FileUpload</a>
-                </Link>
-              </li>
-            </ul>
+            
 
             <ul className="nav-item">
               <li>
                 <Link href= "/Player/musicplayer">
-                  <a className="nav-link text-danger">MusicPlayer</a>
+                  <a className="nav-link">MusicPlayer</a>
                 </Link>
               </li>
             </ul>
