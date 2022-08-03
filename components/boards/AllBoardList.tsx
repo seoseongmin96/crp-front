@@ -1,42 +1,44 @@
 import { Article } from '@/modules/types'
 import React from 'react'
 import Image from 'next/image'
-
+import { musicData } from '@/modules/types'
 export interface Props  {
   
-  data : Article[]
+  datas : Article[],
+  onDeleteClick: any
 }
 
-const AllBoardList: React.FC<Props> = ({data} : Props) => {
+const AllBoardList: React.FC<Props> = ({datas, onDeleteClick} : Props) => {
   return (
-    <div className='container'>
+    <div className='container'><br/>
     <div>
-      <h1 className='text-center'># CRP 사용자들 #</h1>
+      <h1 className='text-center'># CRP 게시판 #</h1>
     </div>
     <br/>
-    {data.map((article: Article) => 
+    {datas.map((data: Article) => 
     
-    <div className="row mb-2" key={article.articleId}>
+    <div className="row mb-2" key={data.id}>
     <div className="col-12">
       <div className="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div className="col p-4 d-flex flex-column position-static">
-          <input type='hidden' key={article.articleId}/>
+          <input type='hidden' key={data.id}/>
           <strong className="d-inline-block mb-2 text-primary">
-            <h5>{article?.nickname}</h5>
+            {/* <h5>{data?.nickname}</h5> */}
           </strong>
-          <input type = 'hidden' name = 'articleId' value = {article.articleId}/>
+          <input type = 'hidden' name = 'articleId' value = {data.id}/>
           <h3 className="mb-0">
-            {article?.title}
+            {data?.title}
           </h3>
           <div className="mb-1 text-muted">
-          <h5> {article?.writtenDate} </h5>
+          {/* <h5> {article?.writtenDate} </h5> */}
           </div>
-          <p key={article.content} className="card-text mb-auto">{article?.content}</p>
+          <p key={data.content} className="card-text mb-auto">{data?.content}</p>
           
           
         </div>
+        <button onClick={()=>onDeleteClick(data.id)} type='button' className='btn btn-outline-danger btn-sm m-3 col-3'>삭제</button>
         <div className="col-auto d-none d-lg-block">
-          <Image src={article?.picture} alt="board"/>
+          {/* <Image src={article?.picture} alt="board"/> */}
         </div>
         
       </div>

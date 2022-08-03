@@ -19,7 +19,7 @@ type Props = {
 };
 
 const AnUpload: React.FC<Props> = ({ onSubmit }: Props) => {
-  //const [isFileTypesModalOpen, setIsFilesTypeModalOpen] = useState<boolean>(false)
+ 
   const [uploadFormError, setUploadFormError] = useState<string>("");
 
   const handleFileUpload = async (element: HTMLInputElement) => {

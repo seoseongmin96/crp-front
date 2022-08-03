@@ -1,8 +1,11 @@
 import React, {useEffect, useState } from 'react'
 import AllBoardList from '@/components/boards/AllBoardList'
 import { NextPage } from 'next'
-import { Article } from '@/modules/types'
+
+import { Article, musicData } from '@/modules/types'
 import { ArticleController } from '@/modules/controllers/ArticleController'
+import { useAppDispatch } from '@/hooks'
+import { removeArticle } from '@/modules/slices/articleSlice'
 
 const headers = {
   "Content-Type" : "application/json",
@@ -13,18 +16,27 @@ const headers = {
 const AllBoardListPage: NextPage = () => {
   
 
+
   const [ data, setData ] = useState<Array<Article>>([])
   
+  const dispatch = useAppDispatch()
+
   useEffect (() => {
     const articleController = new ArticleController();
-    articleController.readList().then(resonse => {
-      setData(resonse)
+    articleController.readList().then(response => {
+      setData(response)
     })
 } ,[])
 
+  const onDeleteClick = (articleNo : any) => {
+    dispatch(removeArticle({id: articleNo}))
+    window.location.href = ('/boards/allBoardList')
+
+  }
+
   
   return (
-    <AllBoardList data = {data} />
+    <AllBoardList onDeleteClick={onDeleteClick} datas = {data} />
   )
 }
 

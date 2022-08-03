@@ -29,7 +29,7 @@ function* fetchMyArticleSaga(action: { payload: any }) {
 function* removeArticleSaga(action: { payload: Article }) {
   const articleController = new ArticleController();
   try {
-    yield call(articleController.removeArticle, action.payload);
+    yield call(articleController.removeArticle, action.payload.id);
   } catch (error) {}
 }
 

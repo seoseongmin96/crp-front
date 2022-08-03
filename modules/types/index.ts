@@ -1,5 +1,4 @@
 export interface Article {
-  userId?: number;
   nickname?: string;
   articleId?: number;
   title?: string;
@@ -11,6 +10,8 @@ export interface Article {
   qna?: string;
   pictureName?: string;
   size?: number;
+  writeData? : string;
+  id? : number;
 }
 export interface User {
   userId?: number;
@@ -34,6 +35,13 @@ export interface UploadFileResponse {
 export interface ValidatorResponse {
   isValid: boolean;
   errorMessage: string;
+}
+
+export interface musicData {
+  data? : musicData[]
+  userId : number;
+  title : string;
+  content : string;
 }
 
 export const fileTypes = ["jpg", "png"];

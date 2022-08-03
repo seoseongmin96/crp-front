@@ -5,7 +5,7 @@ export class ArticleService {
   public createArticleSlice() {
     const initialState: ArticleState = {
       data: {
-        userId: 0,
+        id: 1,
         title: "",
         content: "",
         open: "",

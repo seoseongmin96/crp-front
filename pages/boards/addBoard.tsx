@@ -9,7 +9,7 @@ import { Article } from '@/modules/types'
 const AddBoardPage: NextPage = () =>  {
   const date = new Date();
   const writtenDate = date.toDateString()
-  const [write, setWrite] = useState<Article>({ articleId: 0, userId : 0, title:'', content: '',
+  const [write, setWrite] = useState<Article>({ title:'', content: '', open: "",
   picture: '', writtenDate: '', pictureName: ''
 })
   const dispatch = useAppDispatch()
