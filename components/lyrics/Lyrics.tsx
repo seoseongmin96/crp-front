@@ -32,7 +32,7 @@ const Lyrics: React.FC<Props> = ({onChange, onSubmit}) => {
   
 	</select> <br/><br/>
     
-    <button onClick={onClick} type="button" className="btn btn-primary">작사하기</button><br/><br/>
+    <button onClick={onClick} type="button" className="btn btn-dark ">작사하기</button><br/><br/>
     {click === 1  ? <div className="input-group">
               <span className="input-group-text">
               <h5>

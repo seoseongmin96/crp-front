@@ -12,6 +12,7 @@ const headers = {
 const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
   window.location.href = `${HOST_3000}/lyrics/lyrics`;
+  //window.location.href = `${HOST_3000}/lyrics/lyrics1`;
 };
 
 const LyUploadPage: NextPage = () => {
