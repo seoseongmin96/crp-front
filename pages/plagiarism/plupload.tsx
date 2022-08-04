@@ -11,7 +11,7 @@ const headers = {
 };
 const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
-  window.location.href = `${HOST_3000}/plagiarism/plagiarism`;
+  window.location.href = "/plagiarism/plagiarism";
 };
 
 const fixonSubmitFile =  async (e: React.FormEvent<HTMLFormElement>) => {

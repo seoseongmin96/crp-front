@@ -9,7 +9,7 @@ const Select: React.FC = () => {
             <div className="card" style={{width: 18+"rem"}}>
             <img src="https://img.freepik.com/free-vector/illegal-pirate-paper-document-pirated-content-flat-vector-illustration_124715-1535.jpg" width={"100%"} height={"100%"} className="card-img-top" alt="..."/>
                 <div className="card-body">
-                    <h5 className="card-title">표절 검사를 확인해보세요</h5> <br/> 
+                    <h5 className="card-title">표절 결과를 확인해보세요</h5> <br/> 
                     <p className="card-text"></p>
                     <Link href="/plagiarism/plupload" ><a className="btn btn-outline-dark">표절검사</a></Link>
                     
@@ -19,10 +19,10 @@ const Select: React.FC = () => {
             <div className="card" style={{width: 18+"rem"}}>
                 <img src="https://img.freepik.com/free-vector/data-analysis-illustration-flat-style-design_159144-40.jpg?w=2000" className="card-img-top" alt="..."/>
                     <div className="card-body">
-                        <h5 className="card-title">악보를 분석해보세요</h5> <br/> 
+                        <h5 className="card-title"> 작곡을 해보세요</h5> <br/> 
                         <p className="card-text"></p>
-                        <Link href="/analysis/anupload">
-                            <a className="btn btn-outline-dark">악보분석</a>
+                        <Link href="/compose/comupload">
+                            <a className="btn btn-outline-dark">작곡하기</a>
                         </Link>
                     </div>
             </div>

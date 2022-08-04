@@ -135,7 +135,7 @@ const Home: React.FC = () => {
           <br />
           <article className="product0">
             <h2>
-              CRP만의 표절/분석/작사 프로그램을 이용해보세요
+              CRP만의 표절/작곡/작사 프로그램을 이용해보세요
               <br />
               <br />
               <Link href="/common/select">
@@ -155,7 +155,7 @@ const Home: React.FC = () => {
           <br />
           <article className="product1">
             <h2>
-              CRP만의 피아노 프로그램을 이용해보세요
+              CRP만의 피아노로 자유롭게 연주해보세요
               <br />
               <br />
               <Link href="/piano/piano">

@@ -1,5 +1,4 @@
-import Analysis from "./analysis/Analysis"
-import Anupload from "./analysis/Anupload"
+
 import Footer from "./common/Footer"
 import Home from "./common/Home"
 import Nav from "./common/Nav"
@@ -12,7 +11,7 @@ import Lyupload from "./lyrics/Lyupload"
 import Plagiarism from "./plagiarism/Plagiarism"
 import Plupload from "./plagiarism/Plupload"
 
-export { Analysis, Anupload, Footer, Home, Nav,
+export { Footer, Home, Nav,
     Select, AboutSite, OurSite, Profile, Lyrics,
     Lyupload, Plagiarism, Plupload };  
     

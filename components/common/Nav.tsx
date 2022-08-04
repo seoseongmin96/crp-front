@@ -110,7 +110,7 @@ const Nav: React.FC = () => {
             <ul className="nav-item">
               <li>
                 <Link href="/common/select">
-                  <a className="nav-link">표절/분석/작사 프로그램</a>
+                  <a className="nav-link">표절/작곡/작사 프로그램</a>
                 </Link>
               </li>
             </ul>

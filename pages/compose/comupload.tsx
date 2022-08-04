@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Lyupload from "@/components/lyrics/Lyupload";
+import Comupload from "@/components/compose/Comupload";
 import { NextPage } from "next";
 import axios from "axios";
 import { HOST_3000, HOST_8000 } from "@/components/common/Path";
@@ -11,11 +11,11 @@ const headers = {
 };
 const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
-  window.location.href = "/lyrics/lyrics";
+  window.location.href = "/compose/complayer";
   
 };
 
-const LyUploadPage: NextPage = () => {
-  return <Lyupload onSubmit={onSubmitFile} />;
+const ComUploadPage: NextPage = () => {
+  return <Comupload onSubmit={onSubmitFile} />;
 };
-export default LyUploadPage;
+export default ComUploadPage;

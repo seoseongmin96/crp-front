@@ -5,7 +5,7 @@ type Props = {
   onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
 };
 
-const LyUpload: React.FC<Props> = ({ onSubmit }: Props) => {
+const ComUpload: React.FC<Props> = ({ onSubmit }: Props) => {
   return (
     <div>
       <form onSubmit={onSubmit}>
@@ -13,20 +13,20 @@ const LyUpload: React.FC<Props> = ({ onSubmit }: Props) => {
           <h4 className={style.h4}>
             {" "}
             <br />
-            인공지능을 사용하여 작사를 경험해보세요
+            실시간으로 인공지능이 작곡한 노래를 들어보세요
           </h4>
         </div>
         <div className="col-md-3 text-center m-auto w-75 p-3">
           <button
-            className="btn btn-outline-dark "
+            className="btn btn-outline-secondary "
             type="submit"
             id="inputGroupFileAddon04"
           >
-            <h5>작사하기</h5>
+            <h5>들어보기</h5>
           </button>
         </div>
       </form>
     </div>
   );
 };
-export default LyUpload;
+export default ComUpload;
