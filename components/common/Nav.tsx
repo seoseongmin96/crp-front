@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import React, { useState } from "react";
 import Link from "next/link";
-import { HOST_3001 ,MUSIC_PLAYER_PORT } from "@/components/common/Path";
+import { HOST_3001, MUSIC_PLAYER_PORT } from "@/components/common/Path";
 
 const Nav: React.FC = () => {
   return (
@@ -84,7 +84,7 @@ const Nav: React.FC = () => {
 
             <ul className="nav-item">
               <li>
-                <Link href= "/common/select">
+                <Link href="/common/select">
                   <a className="nav-link">표절/분석/작사 프로그램</a>
                 </Link>
               </li>
@@ -98,27 +98,29 @@ const Nav: React.FC = () => {
               </li>
             </ul>
 
-
-
             <ul className="nav-item">
               <li>
-                <Link href= "/music/piano">
+                <Link href="/piano/piano">
                   <a className="nav-link">Piano</a>
                 </Link>
               </li>
             </ul>
 
-            
-
-            <ul className="nav-item">
+            {/* <ul className="nav-item">
               <li>
                 <Link href= "/Player/musicplayer">
                   <a className="nav-link">MusicPlayer</a>
                 </Link>
               </li>
-            </ul>
+            </ul> */}
 
-            
+             <ul className="nav-item">
+              <li>
+                <Link href= "/music/player">
+                  <a className="nav-link">MusicPlayer</a>
+                </Link>
+              </li>
+            </ul>
           </ul>
         </div>
       </div>

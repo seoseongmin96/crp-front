@@ -1,5 +1,5 @@
 import React from 'react'
-import Piano from "../../components/music/Piano"
+import Piano from "../../components/piano/Piano"
 const PianoPage = () => {
   return (
     <Piano/>

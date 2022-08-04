@@ -81,7 +81,7 @@ const Home: React.FC = () => {
     <div id="Fade" className="carousel slide carousel-fade" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active" data-bs-interval="3000">
-      <img src="cutton.jpg" height = {630} className="d-block w-100" alt=""/>
+      <img src="cutton.jpg" height = {630} className="d-block w-100" alt="cutton"/>
       <div className = "carousel-caption text-start d-none d-md-block">
       <h2>Create Your Music</h2>
         <p>The music you hear is beautiful, but the music you do not hear is even more beautiful.</p>
