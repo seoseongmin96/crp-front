@@ -75,8 +75,33 @@ const Nav: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/boards/allBoardList">
+                  <Link  href="/boards/allBoardList">
                     <a className="dropdown-item">게시판 목록</a>
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle "
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                음악 프로그램
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <Link href="/piano/piano">
+                    <a className="dropdown-item">피아노</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/music/player">
+                    <a className="dropdown-item">뮤직 플레이어</a>
                   </Link>
                 </li>
               </ul>
@@ -94,30 +119,6 @@ const Nav: React.FC = () => {
               <li>
                 <Link href="/company/aboutSite">
                   <a className="nav-link ">관련 사이트</a>
-                </Link>
-              </li>
-            </ul>
-
-            <ul className="nav-item">
-              <li>
-                <Link href="/piano/piano">
-                  <a className="nav-link">Piano</a>
-                </Link>
-              </li>
-            </ul>
-
-            {/* <ul className="nav-item">
-              <li>
-                <Link href= "/Player/musicplayer">
-                  <a className="nav-link">MusicPlayer</a>
-                </Link>
-              </li>
-            </ul> */}
-
-             <ul className="nav-item">
-              <li>
-                <Link href= "/music/player">
-                  <a className="nav-link">MusicPlayer</a>
                 </Link>
               </li>
             </ul>

@@ -10,47 +10,29 @@ function PlayerPage() {
       src: "/music/FlyAway.mp3",
     },
     {
-      title: "Nach Meri Rani",
-      artist: "Yo Yo Honey Singh",
-      img_src: "./images/nach-meri-rani.jpg",
-      src: "./music/Naach Meri Rani.mp3",
+      title: "A whole New World",
+      artist: "ZAYN",
+      img_src: "/images/aladdin.jpg",
+      src: "/music/Aladdin.mp3",
     },
     {
-      title: "Care Ni Karda",
-      artist: "Yo Yo Honey Singh",
-      img_src: "./images/care-ni-karda.jpg",
-      src: "./music/Care Ni Karda.mp3",
+      title: "Shallow",
+      artist: "Lady Gaga & Bradely",
+      img_src: "/images/shallow.jpg",
+      src: "/music/Shallow.mp3",
     },
     {
-      title: "Burj Khalifa",
-      artist: "Shashi",
-      img_src: "./images/burjkalifa.jpg",
-      src: "./music/BurjKhalifa.mp3",
+      title: "Faded",
+      artist: "Alan Walker",
+      img_src: "/images/faded.jpg",
+      src: "/music/Faded.mp3",
     },
     {
-      title: "Tango Del Fuego",
-      artist: "Parov Stelar",
-      img_src: "./images/ParovStelarGeorgiaGibbs-TangoDelFuego.jpg",
-      src: "./music/ParovStelarGeorgiaGibbs-TangoDelFuego.mp3",
-    },
-    {
-      title: "Take You Dancing",
-      artist: "Jason Derulo",
-      img_src: "./images/JasonDerulo-TakeYouDancing.jpg",
-      src: "./music/JasonDerulo-TakeYouDancing.mp3",
-    },
-    {
-      title: "Daisy",
-      artist: "Ashnikko",
-      img_src: "./images/Ashnikko-Daisy.jpg",
-      src: "./music/Ashnikko-Daisy.mp3",
-    },
-    {
-      title: "Dolly Song",
-      artist: "Partz Grimbad",
-      img_src: "./images/PatzGrimbard-DollySong.jpg",
-      src: "./music/PatzGrimbard-DollySong.mp3",
-    },
+      title: "Danza Kuduro",
+      artist: "Don Omar",
+      img_src: "/images/DanzaKuduro.jpg",
+      src: "/music/DanzaKuduro.mp3",
+    }
   ]);
 
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
@@ -66,7 +48,7 @@ function PlayerPage() {
     });
   }, [currentSongIndex, songs.length]);
 
-  return (
+  return ( <div className= "PlayerPage" >
     <div className="App">
       <Player
         currentSongIndex={currentSongIndex}
@@ -74,6 +56,7 @@ function PlayerPage() {
         nextSongIndex={nextSongIndex}
         songs={songs}
       />
+    </div>
     </div>
   );
 }
