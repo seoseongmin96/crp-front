@@ -176,11 +176,9 @@ const Home: React.FC = () => {
           <article className="product2">
             <h2>CRP만의 뮤직 플레이어를 이용해보세요</h2>
             <br />
-            <p>
-              <a className="btn btn-secondary" href="/music/player">
-                바로가기 &raquo;
-              </a>
-            </p>
+            <Link href="/music/player">
+              <a className="btn btn-secondary">바로가기 &raquo;</a>
+            </Link>
           </article>
           <div>
             <section className="mb-4">

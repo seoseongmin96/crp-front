@@ -11,6 +11,7 @@ const headers = {
 };
 const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
+  alert('파일업로드 성공')
   window.location.href = "/plagiarism/plagiarism";
 };
 

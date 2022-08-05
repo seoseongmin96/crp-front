@@ -2,9 +2,8 @@ import React, { useEffect, useState } from "react";
 
 type Props = {
   onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
-  onChange: (e: React.FormEvent<HTMLInputElement> | any) => void;
 };
-const Plagiarism: React.FC<Props> = ({ onChange, onSubmit }) => {
+const Plagiarism: React.FC<Props> = ({ onSubmit }) => {
   const onClick = (e: any) => {
     e.preventDefault();
     setClick(1);
@@ -43,8 +42,7 @@ const Plagiarism: React.FC<Props> = ({ onChange, onSubmit }) => {
               <br />
               <div className="w-100 p-3">
                 <h5>
-                  하이라이트 된 부분을 제외한 마디가 학교종이 땡땡땡 악보와
-                  유사합니다.
+                  하이라이트 된 부분의 마디가 학교종이 땡땡땡 악보와 유사합니다.
                 </h5>
               </div>
             </div>
