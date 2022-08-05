@@ -9,13 +9,16 @@ const headers = {
   Accept: "application/json",
   //Authorization: "JWT fefege...",
 };
-const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  window.location.href = "/compose/complayer";
-  
-};
+
+// 현재 서버가 없는 상태 //
+
+// const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
+//   e.preventDefault();
+//   window.location.href = "/compose/complayer";
+
+// };
 
 const ComUploadPage: NextPage = () => {
-  return <Comupload onSubmit={onSubmitFile} />;
+  return <Comupload />;
 };
 export default ComUploadPage;

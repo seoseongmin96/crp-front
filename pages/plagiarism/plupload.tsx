@@ -9,16 +9,17 @@ const headers = {
   Accept: "application/json",
   //Authorization: "JWT fefege...",
 };
-const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  alert('파일업로드 성공')
-  window.location.href = "/plagiarism/plagiarism";
-};
 
-const fixonSubmitFile =  async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault()
-  
-}
+            // 현재 서버가 없는 상태 //
+
+
+// const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
+//   e.preventDefault();
+//   window.location.href = "/plagiarism/plagiarism";
+
+// };
+
+
 
 
 const PlUploadPage: NextPage = () => {
@@ -27,11 +28,10 @@ const PlUploadPage: NextPage = () => {
 
   
  
-  useEffect(()=> {
-  } ,[])
+  
 
   return (
-    <Plupload onSubmit = {onSubmitFile} onSubmit1={fixonSubmitFile}/>
+    <Plupload />
   )
 }
 export default PlUploadPage

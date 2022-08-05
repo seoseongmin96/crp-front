@@ -9,13 +9,16 @@ const headers = {
   Accept: "application/json",
   //Authorization: "JWT fefege...",
 };
-const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
-  window.location.href = "/lyrics/lyrics";
+
+          // 현재 서버가 없는 상태 //
+
+// const onSubmitFile = async (e: React.FormEvent<HTMLFormElement>) => {
+//   e.preventDefault();
+//   window.location.href = "/lyrics/lyrics";
   
-};
+// };
 
 const LyUploadPage: NextPage = () => {
-  return <Lyupload onSubmit={onSubmitFile} />;
+  return <Lyupload  />;
 };
 export default LyUploadPage;

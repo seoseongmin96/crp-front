@@ -1,14 +1,18 @@
 import React, { useState, SyntheticEvent } from "react";
 import style from "@/styles/Table.module.css";
+import Link from "next/link";
 
 type Props = {
-  onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+
+            // 현재 서버가 없는 상태 //
+
+  //onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
 };
 
-const ComUpload: React.FC<Props> = ({ onSubmit }: Props) => {
+const ComUpload: React.FC<Props> = ({}: Props) => {
   return (
     <div>
-      <form onSubmit={onSubmit}>
+      <form>
         <div className="col-md-3 text-center m-auto w-75 p-3">
           <h4 className={style.h4}>
             {" "}
@@ -17,6 +21,7 @@ const ComUpload: React.FC<Props> = ({ onSubmit }: Props) => {
           </h4>
         </div>
         <div className="col-md-3 text-center m-auto w-75 p-3">
+          <Link href= "/compose/complayer">
           <button
             className="btn btn-outline-secondary "
             type="submit"
@@ -24,6 +29,7 @@ const ComUpload: React.FC<Props> = ({ onSubmit }: Props) => {
           >
             <h5>들어보기</h5>
           </button>
+          </Link>
         </div>
       </form>
     </div>

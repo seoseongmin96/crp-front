@@ -13,14 +13,17 @@ import {
   FileService,
   FileValidator as validator,
 } from "../../modules";
+import Link from 'next/link';
 
 type Props = {
   
-  onSubmit : (e: React.FormEvent<HTMLFormElement> ) => void
-  onSubmit1 :(e: React.FormEvent<HTMLFormElement> ) => void
+     // 현재 서버가 없는 상태 //
+
+  //onSubmit : (e: React.FormEvent<HTMLFormElement> ) => void
+  
 }
 
-const PlUpload: React.FC<Props> = ({ onSubmit, onSubmit1 }: Props) => {
+const PlUpload: React.FC<Props> = ({}: Props) => {
   
   const [uploadFormError, setUploadFormError] = useState<string>("");
 
@@ -71,43 +74,9 @@ const PlUpload: React.FC<Props> = ({ onSubmit, onSubmit1 }: Props) => {
 
   return (
   <div>
-    <form onSubmit={onSubmit1}>
-      <Box width="50%" m="100px auto" padding="2" shadow="base">
-        <Flex direction="column" alignItems="center" mb="5">
-          <div className="col-md-3 text-center m-auto w-75 p-3">
-            <h4 className={style.h4}>
-              {" "}
-              <br />
-              원본용 악보를 업로드하세요
-            </h4>
-          </div>
+    
 
-          {uploadFormError && (
-            <Text mt="5" color="red">
-              {uploadFormError}
-            </Text>
-          )}
-          <Box mt="10" ml="24">
-            <Input
-              type="file"
-              variant="unstyled"
-              onChange={(e: SyntheticEvent) =>
-                handleFileUpload(e.currentTarget as HTMLInputElement)
-              }
-            />
-            <button
-              className="btn btn-outline-secondary"
-              type="submit"
-              id="inputGroupFileAddon04"
-            >
-              <h5>악보 등록</h5>
-            </button>
-          </Box>
-        </Flex>
-      </Box>
-    </form>
-
-    <form onSubmit={onSubmit}>
+    <form >
       <Box width="50%" m="100px auto" padding="2" shadow="base">
         <Flex direction="column" alignItems="center" mb="5">
           <div className="col-md-3 text-center m-auto w-100 p-3">
@@ -131,6 +100,7 @@ const PlUpload: React.FC<Props> = ({ onSubmit, onSubmit1 }: Props) => {
                 handleFileUpload(e.currentTarget as HTMLInputElement)
               }
             />
+            <Link href= "/plagiarism/plagiarism">
             <button
               className="btn btn-outline-secondary"
               type="submit"
@@ -138,6 +108,7 @@ const PlUpload: React.FC<Props> = ({ onSubmit, onSubmit1 }: Props) => {
             >
               <h5>악보 등록</h5>
             </button>
+            </Link>
           </Box>
         </Flex>
       </Box>
