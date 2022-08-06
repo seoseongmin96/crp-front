@@ -24,7 +24,7 @@ function PlayerPage() {
     {
       title: "Faded",
       artist: "Alan Walker",
-      img_src: "/images/faded.jpg",
+      img_src: "/images/Faded.jpg",
       src: "/music/Faded.mp3",
     },
     {
